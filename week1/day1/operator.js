@@ -140,7 +140,7 @@ console.log("Number:", randomnum);
 console.log("Size:", test1(randomnum));
 
 //golf code
-var names= ["Hole-in-one!","Eagle","Birdie","Par","Bogey","Double Bogey","Go Home"]
+var names= ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home"]
 
 function golfScore(par,strokes){
     if (strokes == 1){
@@ -161,7 +161,7 @@ function golfScore(par,strokes){
     return "change me"
 }
 
-console.log(golfScore(5,8))
+console.log(golfScore(5, 8))
 
 
 
