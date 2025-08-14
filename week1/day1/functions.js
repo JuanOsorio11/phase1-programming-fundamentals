@@ -39,6 +39,61 @@ function myLocalScope(){
     console.log(myVar)
 }
 
-myLocalScope()
-
+myLocalScope() 
 //dont use variables outside, it can be inside functions
+
+var outerwear = "t-shirt"
+
+function inerwear(){
+    return outerwear
+}
+
+//console.log(inerwear())
+
+var outerwear = "t-shirt"
+
+function inerwear2(){
+    var outerwear= "pants"
+    return outerwear
+}
+
+console.log(inerwear2())
+console.log(outerwear)
+//the function doesnt override the outerwear. but what comes out of the function is pants instead of t shirt, 
+// but if we use console log to get outerwear instead of the function then t shirt is returned
+
+
+function minusSeven(num){
+    return num - 7
+}
+
+console.log(minusSeven(10))
+
+//example 2
+
+function minusSeven2(num){
+    return num * 10
+}
+
+console.log(minusSeven2(10))
+
+
+var sum = 2
+function addFive(){
+    var black = sum + 5
+    return black
+}
+console.log(addFive())
+
+
+function ourTrueOrFalse(isItTrue){
+    if (isItTrue){
+        return "yes, it's true"
+    }
+    return "No, its false"
+}
+
+console.log(ourTrueOrFalse(true))
+
+
+

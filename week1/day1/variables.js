@@ -66,6 +66,7 @@ var lastName = "lovelace";
 
 firstLetterOfLastName = lastName[5]
 console.log(firstLetterOfLastName)
+
  
 function wordBlanks(myNoun, myAdjective, myVerb, myAdverb){
     var result =" "
