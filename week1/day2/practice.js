@@ -91,3 +91,28 @@ function checkObj(checkProp){
 }
 
 console.log(checkObj("author"))
+
+
+/*In `practice.js`:
+- Create an object `contacts` with 3 people’s names as keys and their phone numbers as values.
+- Write a function `findContact(name)` that:
+  - Returns the phone number if it exists.
+  - Returns `"Contact not found"` if it doesn’t.
+  */
+ 
+
+  var contacts = {
+    "Juan" : "6048030613",
+    "Daniel" : "6048161571",
+    "Pamela" : "6049689726"
+  }
+
+function findContact(checkProp){
+    if (contacts.hasOwnProperty(checkProp)) { //hasOwnProperty 
+        return contacts[checkProp] 
+    }else{
+        return "Contact not found"
+    }
+}
+console.log("project " + findContact("Isa"))
+
