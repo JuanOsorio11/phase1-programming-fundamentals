@@ -102,3 +102,29 @@ function checkObj(checkProp){
 }
 
 console.log(checkObj(10)) //use "" in this situation cuz then it doesnt work
+
+//manipulating complex objects
+
+var myMusic = [
+    {
+        "artist" : "Billy Joel",
+        "title" : "Piano Man",
+        "release_year" : 1973,
+        "formats" : [
+            "cd",
+            "8T",
+            "LP"
+        ],
+        "gold": true
+    },
+
+    {
+        "artist" : "Beau Carnes",
+        "title" : "cereal Man",
+        "release_year" : 2003,
+        "formats" : [
+            "youtube video"
+        ]
+    }
+]
+console.log(myMusic.artist)
