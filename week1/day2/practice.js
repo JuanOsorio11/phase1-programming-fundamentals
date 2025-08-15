@@ -54,3 +54,40 @@ function Grades(val){
 }
 
 console.log(Grades("f"))
+
+
+/*1. Create an object `book` with `title`, `author`, and `year`.
+2. Print the `author` using dot notation.
+3. Add a new property `pages`.
+4. Update `year` to a new value.
+5. Delete the `pages` property.
+6. Check if `book` has the property `author`.
+*/
+
+//1 
+var book = {
+    "title" : "La Mancha",
+    "author" : "Juan",
+    "year" : 2025
+}
+
+//2
+console.log(book.author)
+
+//3
+book["pages"] = 100 //this is another version to add a property book.pages = 100
+
+//4
+book.year = 2020
+console.log(book.pages)
+//console.log(book.year)
+//5
+delete book.pages
+//6
+function checkObj(checkProp){
+    if (book.hasOwnProperty(checkProp)) { //hasOwnProperty
+        return book[checkProp]
+    }
+}
+
+console.log(checkObj("author"))
