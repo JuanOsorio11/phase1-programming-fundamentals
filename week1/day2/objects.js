@@ -127,4 +127,21 @@ var myMusic = [
         ]
     }
 ]
-console.log(myMusic.artist)
+
+//nested objects
+
+var myStorage = {
+    "car": {
+        "inside" : {
+            "glove box" : "maps",
+            "passenger seat" : "crumbs"
+        },
+        "outside" : {
+            "trunk" : "jack"
+        }
+    }
+}
+
+var gloveBoxContents = myStorage.car.inside["glove box"]
+console.log(gloveBoxContents)
+//if there a space on a notation then [] this is used, set a new variable, then myStorage.car.inside        multiple things to get to glove box
