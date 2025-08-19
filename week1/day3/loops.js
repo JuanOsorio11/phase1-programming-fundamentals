@@ -70,11 +70,11 @@ console.log(total)
 //nesting for loops
 
 function multiplyAll(arr) {
-    var product = 1;
+    var product = 1
 
     for (var i = 0; i < arr.length; i++) {
         for (var j = 0; j < arr[i].length; j++) {
-            product *= arr[i][j]; //i refers to the group, and j refers to the number inside the group
+            product *= arr[i][j] //i refers to the group, and j refers to the number inside the group
         }
     }
     return product
@@ -84,3 +84,29 @@ function multiplyAll(arr) {
 var product = multiplyAll([[1,2],[3,4],[5,6,7]]) //this is an array of arrays
 
 console.log(product)
+
+//do while loops
+/*
+var myArray1 = []
+var i = 10
+
+while (i < 5) {
+    myArray1.push(i)
+    i++
+}
+
+console.log(i,myArray1)
+*/
+
+//version 2
+
+var myArray1 = []
+var i = 3
+
+do {
+    myArray1.push(i)
+    i++
+} while (i < 5)
+
+console.log(i,myArray1)
+
