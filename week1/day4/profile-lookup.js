@@ -37,7 +37,7 @@ function lookUpProfile(name, prop){
     return "No such contacts" 
 }
 
-//first word is the name, and then the second property is going to return depending of what we ask, in the example below is "likes"
+//first word is the name, and then the second property is going to return depending of what we ask, in the example below is "likes" or anything 
 var data  = lookUpProfile("Akira", "address" )
 
 console.log(data)
