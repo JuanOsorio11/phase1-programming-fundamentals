@@ -61,3 +61,8 @@ function oddAndEven(num){
     }
 }
 console.log(oddAndEven(5))
+
+function gradeScore(num){
+    return num > 100 ? "does not exist" : num >= 90 ? "A" : num < 90 ? "B" : num <= 69 ? "C" : "F"
+} 
+console.log(gradeScore(101))
