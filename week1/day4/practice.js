@@ -11,7 +11,7 @@
 
 function randomFraction(){
 
-    return Math.floor(Math.random()* 2)
+    return Math.random()
 }
 
 console.log(randomFraction())
@@ -22,9 +22,42 @@ function randomInRange(myMax, myMin){
 
 console.log(randomInRange(0,100))
 
-function randomWholeNum(){
+function rollDice(){
 
 
     return Math.floor(Math.random() * 6) + 1
 }
-console.log(randomWholeNum())
+
+console.log("dice number =" + rollDice())
+
+
+/*
+- Convert `"42px"` into `42`.  
+- Convert binary `"1010"` to decimal using `parseInt("1010", 2)`.
+*/
+
+function convertion(str){
+    return parseInt(str)
+}
+console.log(convertion("42px"))
+
+function binaryTest(str){
+    return parseInt(str, 2)
+}
+
+console.log(binaryTest("1111"))//binary is only 0 and 1
+/*
+- Check if a number is even or odd with a ternary.  
+- Multiple ternary: convert score (90+, 70–89, 50–69, <50) into `"A"`, `"B"`, `"C"`, `"F"`.
+*/
+
+//condition ? statement-if-true : statement-if-false
+//this is to check odd %
+function oddAndEven(num){
+    if (num % 2 === 0){
+        return "even Number"
+    } else{
+        return "odd Number"
+    }
+}
+console.log(oddAndEven(5))
