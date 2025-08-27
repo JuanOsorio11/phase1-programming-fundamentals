@@ -22,7 +22,7 @@ const myConcat = (arr1,arr2) => arr1.concat(arr2)//concat is used for combining 
 
 console.log(myConcat([1, 2], [3, 4, 5]))
 
-//write higher oder arrow functions/ this example is not to understand map, is to understand how you can use arrow to make things shorter.
+//write higher order arrow functions/ this example is not to understand map, is to understand how you can use arrow to make things shorter.
 
 const realNumberArray = [4, 5.6, -9.8, 3.13, 42, 6, 8.34, -2]
 const squareList = (arr) => {
@@ -52,3 +52,11 @@ console.log("1 + 3 = " + addition(1, 3))
 const multiplication = (c, d) => c * d
 
 console.log("5 + 3 = " + multiplication(5, 3))
+
+//Use arrow function with `map()` to double numbers in `[1,2,3]`.
+
+function addingNum(num,value = 1){
+    results = num + value
+    return results
+}
+console.log(addingNum(5))

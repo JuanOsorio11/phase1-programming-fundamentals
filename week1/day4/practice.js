@@ -63,6 +63,81 @@ function oddAndEven(num){
 console.log(oddAndEven(5))
 
 function gradeScore(num){
-    return num > 100 ? "does not exist" : num >= 90 ? "A" : num < 90 ? "B" : num <= 69 ? "C" : "F"
+    return num > 100 ? "stop the cap" : num >= 90 ? "A" : num < 90 ? "B" : num <= 69 ? "C" : "F"
 } 
 console.log(gradeScore(101))
+
+/*
+  1. Contact lookup function.  
+  2. Dice roller using random.  
+  3. Grading system with ternary operators.  
+  4. Arrow function that doubles numbers.  
+  */
+
+var contacts = [
+    {
+        "firstName" : "Akira" ,
+        "lastName" : "Laine" ,
+        "number" : "0543236543",
+        "likes" : ["Pizza", "Coding", "Brownie Points"]
+    }, 
+    {
+        "firstName" : "Harry" ,
+        "lastName" : "Potter" ,
+        "number" : "0994372684",
+        "likes" : ["Hogwarts", "Magic", "Hagrid"]
+
+    },
+    {   
+        "firstName" : "Sherlock" ,
+        "lastName" : "Holmes" ,
+        "number" : "0487345643",
+        "likes" : ["Intriguing Cases", "Violin"]
+
+    },
+    {
+        "firstName" : "Kristian" ,
+        "lastName" : "Vos" ,
+        "number" : "unknown",
+        "likes" : ["JavaScript", "Gaming", "Foxes"]
+    },
+]
+
+function contactLookup(name,prop){
+    for (var i = 0; i < contacts.length; i++){
+        if (contacts[i].firstName === name){
+            return contacts[i][prop] || "not such property"
+        }
+    } 
+    return "does not exist"
+}
+
+const data = contactLookup("Sherloc", "number")
+
+console.log(data)
+
+function diceRoller(){
+    var dice1 = Math.floor(Math.random() * 6) + 1
+    var dice2 = Math.floor(Math.random() * 6) + 1
+    return {
+        dice1: dice1,
+        dice2: dice2,
+        total: dice1 + dice2
+    }
+}
+const result = diceRoller();
+console.log(`Dice 1: ${result.dice1}, Dice 2: ${result.dice2}, Total: ${result.total}`);
+//Grading system with ternary operators.  
+//condition ? statement-if-true : statement-if-false
+
+function gradeScore1(num){
+    return num > 100 ? "stop the cap" : num >= 90 ? "A" : num < 90 ? "B" : num <= 69 ? "C" : "F"
+} 
+
+console.log(gradeScore1(101))
+
+//Arrow function that doubles numbers.
+
+const double = number => number * 2
+
+console.log(double(4))
